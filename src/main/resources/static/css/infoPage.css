@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	gap: 25px;
+	background: rgb(41,103,47);
+background: linear-gradient(90deg, rgba(41,103,47,1) 0%, rgba(255,255,255,1) 50%, rgba(41,103,47,1) 100%);
+}
+
+a{
+	width: 150px;
+	box-shadow: black 5px 5px;
+}
+img {
+	border: solid black 5px;
+}

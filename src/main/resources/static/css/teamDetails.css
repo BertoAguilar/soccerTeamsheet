@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.75),
+		rgba(0, 0, 0, 0.75)), url('https://media.istockphoto.com/id/172673618/photo/soccer-fields-lines.jpg?s=612x612&w=0&k=20&c=G81v86XAkPh7cN0-_pm3qClXy6XiTlzE12053sb9xzI=')
+		no-repeat center center/cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.buttonGroup {
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+}
+
+.playerContainer {
+	padding-top: 30px
+}
+
+.addPlayerForm {
+	display: flex;
+	padding-bottom: 30px
+}
+
+.playerText {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+h1 {
+	padding-top: 15px
+}
+
+.fullAlert {
+	display: flex;
+	align-items: center;
+	padding: 5px 10px;
+	margin-bottom: 30px;
+	background-color: rgb(255,245,245);
+	border: solid 1px red;
+	color: black;
+}
+
+h2 {
+	color: red;
+	font-size: 45px;
+}
+.starterBenchList{
+	display: flex;
+	gap: 60px;
+}
+
+.startBenchOption {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding-top: 4px;
+}
+.selectPlayerOption{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
