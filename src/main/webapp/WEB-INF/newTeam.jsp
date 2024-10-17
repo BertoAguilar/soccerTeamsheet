@@ -20,25 +20,25 @@
 
 </head>
 <body>
-	<div class="newTeamContainter">
+	<div class="newTeamContainer">
 		<h1>New Team</h1>
 		<form:form action="/teams" method="post" modelAttribute="team" class="newTeamForm">
-			<p>
-				<form:label path="name">Name</form:label>
+			<p class="formContainer">
+				<form:label path="name">Team Name</form:label>
 				<form:errors path="name" class="text-danger" />
-				<form:input path="name" class="input-group"/>
+				<form:input path="name" class="input-group" placeholder="FC Team Name"/>
 			</p>
-			<p>
+			<p class="formContainer">
 				<form:label path="formation">Formation</form:label>
 				<form:errors path="formation" class="text-danger" />
-				<form:input  path="formation" class="input-group"/>
+				<form:input  path="formation" class="input-group" placeholder="4-3-3"/>
 			</p>
-			<p>
+			<p class="formContainer">
 				<form:label path="gameday">Game Day</form:label>
 				<form:errors path="gameday" class="text-danger" />
 				<form:input  type="date" path="gameday"  class="input-group"/>
 			</p>
-			<p>
+			<p class="formContainer"> 
 				<form:label path="gameTime">Game Time</form:label>
 				<form:errors path="gameTime" class="text-danger" />
 				<form:input  type="time" path="gameTime"  class="input-group"/>

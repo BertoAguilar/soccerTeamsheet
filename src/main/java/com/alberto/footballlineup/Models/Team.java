@@ -29,7 +29,7 @@ public class Team {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	@NotNull
-	@Size(min = 5, max = 40, message = "must be at least 5 characters.")
+	@Size(min = 5, max = 40, message = "Must be at least 5 characters.")
 	private String name;
 	@NotNull
 	@Size(min = 3, max = 40, message = "Please input a Formation")

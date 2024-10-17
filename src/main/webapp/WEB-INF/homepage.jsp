@@ -34,7 +34,7 @@
 			</div>
 			<div class="toplinks">
 				<a href="/info"><img class="icon" alt="?" src="/img/info2.png"></a>
-				<a href="/logout" class="btn btn-primary"> Logout</a>
+				<a href="/logout" class="logout btn"> Logout</a>
 			</div>
 		</div>
 		<table class="table">
@@ -58,9 +58,9 @@
 			</tbody>
 		</table>
 		<div class="links">
-			<a href="/teams/new" class="btn btn-primary"> New Team</a>
-			<a href="/players/new" class="btn btn-primary"> Add Player</a>
-			<a href="/players/all" class="btn btn-primary"> View All Players</a>
+			<a href="/teams/new" class="btn"> New Team</a>
+			<a href="/players/new" class="btn"> Add Player</a>
+			<a href="/players/all" class="btn"> View All Players</a>
 		</div>
 	</div>
 </body>

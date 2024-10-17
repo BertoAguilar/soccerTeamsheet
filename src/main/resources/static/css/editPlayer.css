@@ -21,6 +21,12 @@ body {
     gap: 20px;
 }
 
+.formContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 editForm h1 {
     margin-bottom: 24px;
     font-size: 32px;
@@ -50,11 +56,18 @@ editForm h1 {
 
 .startBenchOption {
 	display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5px;
-    padding: 4px 0px 25px 0px;
+	flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #fdc8f9;
+    background: white;
+    color: black;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
 }
 
 .radioGroup{
@@ -91,4 +104,59 @@ h2 {
 	display: flex;
 	flex-direction: row;
 	gap: 10px;
+}
+
+.editContainer input[type="text"],
+.editContainer select {
+    border: 0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #fdc8f9;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.buttonGroup .homeBtn, 
+.buttonGroup .submitBtn,
+.deleteButton .deleteBtn{
+    border: 0;
+	background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.buttonGroup .homeBtn {
+    border: 2px solid #3498db;
+}
+
+.buttonGroup .submitBtn {
+    border: 2px solid #2ecc71;
+}
+
+.deleteButton .deleteBtn {
+    border: 2px solid #F15A5C;
+}
+
+.buttonGroup .homeBtn:hover {
+	background: #3498db;
+    color: black;
+}
+.buttonGroup .submitBtn:hover {
+	background: #2ecc71;
+    color: black;
+}
+.deleteButton .deleteBtn:hover {
+	background: #F15A5C;
+    color: black;
 }

@@ -59,7 +59,8 @@ h2 {
 	gap: 23px
 }
 .icon {
-	width:42px
+	border: none;
+	width: 55px;
 }
 
 .toplinks {
@@ -67,4 +68,44 @@ h2 {
 	align-items: center;
 	justify-content: space-between;
 	gap:15px
+}
+
+.logout{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #F15A5C;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.links a {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+
+.links a:hover {
+    background: #3498db;
+    color: black;
+}
+
+.logout:hover {
+	background: #F15A5C;
+	color: black;
 }

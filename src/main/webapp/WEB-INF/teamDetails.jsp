@@ -22,15 +22,15 @@
 
 </head>
 <body>
-	<div class="position-absolute top-50 start-50 translate-middle">
+	<div class="teamDetailContainer position-absolute top-50 start-50 translate-middle">
 			<div class="buttonGroup">
-			<a href="/teams" class="btn btn-primary">Home Page</a>
+			<a href="/teams" class="homeBtn btn">Home Page</a>
 			<c:if test="${team.user.id == userId}">
 				<div class="buttonGroup">
-					<a href="/teams/edit/${team.id}" class="btn btn-primary">Edit</a>
+					<a href="/teams/edit/${team.id}" class="editBtn btn">Edit</a>
 					<form action="/teams/destroy/${team.id}" method="post">
 					<input type="hidden" name="_method" value="delete"> 
-					<input type="submit" value="Delete" class="btn btn-danger">
+					<input type="submit" value="Delete" class="deleteBtn btn">
 					</form>
 				</div>
 			</c:if>
@@ -77,7 +77,7 @@
 								<form:radiobutton value="False" label="No" path="isStarter" />
 								<form:errors class="text-danger" path="isStarter" />
 								<c:out value="${error}"></c:out>
-								<button>Add Player</button>
+								<button class="btn btn-primary">Add Player</button>
 							</div>
 						</div>
 					</div>

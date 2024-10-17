@@ -13,6 +13,12 @@ body {
 	color: white;
 }
 
+.teamDetailContainer{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .buttonGroup {
 	display: flex;
 	flex-direction: row;
@@ -20,6 +26,9 @@ body {
 }
 
 .playerContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding-top: 30px
 }
 
@@ -62,10 +71,54 @@ h2 {
     align-items: center;
     justify-content: space-between;
     gap: 5px;
-    padding-top: 4px;
+    padding-top: 10px;
 }
 .selectPlayerOption{
 	display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.buttonGroup .homeBtn, 
+.buttonGroup .editBtn,
+.buttonGroup .deleteBtn {
+    border: 0;
+	background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.buttonGroup .homeBtn {
+    border: 2px solid #3498db;
+}
+
+.buttonGroup .editBtn {
+    border: 2px solid #B85E2A;
+}
+
+.buttonGroup .deleteBtn {
+    border: 2px solid #F15A5C;
+}
+
+.buttonGroup .homeBtn:hover {
+	background: #3498db;
+    color: black;
+}
+.buttonGroup .editBtn:hover {
+	background: #B85E2A;
+    color: black;
+}
+.buttonGroup .deleteBtn:hover {
+	background: #F15A5C;
+    color: black;
+}
+.startBenchOption .btn:hover {
+    color: black;
 }

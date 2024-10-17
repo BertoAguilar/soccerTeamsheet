@@ -12,7 +12,6 @@ body {
 
 .buttonGroup {
 	display: flex;
-	flex-direction: column;
 	gap: 15px;
 }
 
@@ -29,4 +28,44 @@ h1 {
 .icon {
 	width: 30px;
 	height: fit-content;
+}
+
+.buttonGroup a {
+    border: 0;
+	background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.buttonGroup .edit {
+    border: 0;
+	background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #B85E2A;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.buttonGroup a:hover {
+	background: #3498db;
+    color: black;
+}
+
+.buttonGroup .edit:hover {
+	background: #B85E2A;
+    color: black;
 }

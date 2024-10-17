@@ -49,12 +49,12 @@
 			</p>
 		</c:if>
 		<div class="buttonGroup">
-			<a href="/players/all" class="btn btn-primary">All Players</a>
 			<c:if test="${player.user.id == userId}">
 				<div class="buttonGroup">
-					<a href="/player/edit/${player.id}" class="btn btn-secondary">Edit</a>
+					<a href="/player/edit/${player.id}" class="edit btn">Edit</a>
 				</div>
 			</c:if>
+			<a href="/players/all" class="btn">All Players</a>
 		</div>
 	</div>
 </body>

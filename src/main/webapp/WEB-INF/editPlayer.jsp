@@ -26,12 +26,12 @@
 				<form:form action="/player/${player.id}" method="post"
 					modelAttribute="player" class="editForm">
 					<input type="hidden" name="_method" value="put">
-					<div>
+					<div class="formContainer">
 						<form:label path="playerName">Player's Name</form:label>
 						<form:errors class="text-danger" path="playerName" />
 						<form:input path="playerName" class="input-group" />
 					</div>
-					<div>
+					<div class="formContainer">
 						<form:label path="position">Position</form:label>
 						<form:errors class="text-danger" path="position" />
 						<select name="position" id="position" class="input-group">
@@ -61,20 +61,16 @@
 						<c:out value="${error}"></c:out>
 					</div>
 					<div class="buttonGroup">
-					<c:if test="${player.user.id == userId}">
-							<a href="/players/all" class="btn btn-primary">All Players</a>
-							<input type="submit" value="Submit" class="btn btn-success" />
-					</c:if>
+							<a href="/players/all" class="homeBtn btn ">All Players</a>
+							<input type="submit" value="Submit" class="submitBtn btn" />
 					</div>
 				</form:form>
 			</div>
-			<div class="deletButton">
-				<c:if test="${player.user.id == userId}">
+			<div class="deleteButton">
 				<form action="/player/destroy/${player.id}" method="post">
 					<input type="hidden" name="_method" value="delete"> 
-					<input type="submit" value="Delete" class="btn btn-danger" style="width: 205px">
+					<input type="submit" value="Delete" class="deleteBtn btn" style="width: 205px">
 				</form>
-				</c:if>
 			</div>
 	</div>
 </body>

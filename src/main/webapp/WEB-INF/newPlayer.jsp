@@ -23,17 +23,15 @@
 	<h2>
 		<c:out value="${error}"></c:out>
 	</h2>
-	<div class="newPlayerContainter">
+	<div class="newPlayerContainer">
 		<h1>New Player</h1>
 		<form:form action="/players" method="post" modelAttribute="player"
 			class="newPlayerForm">
-			<p>
-				<form:label path="playerName">Name</form:label>
+			<p class="formContainer">
 				<form:errors path="playerName" class="text-danger" />
-				<form:input path="playerName" class="input-group" />
+				<form:input path="playerName" class="input-group" placeholder="Players Name"/>
 			</p>
-			<p>
-				<form:label path="position">Position</form:label>
+			<p class="formContainer">
 				<form:errors path="position" class="text-danger" />
 				<select name="position" id="position" class="input-group">
 				<option selected disabled>Select A Position</option>
@@ -50,21 +48,23 @@
 				<option>RW</option>
 				</select>
 			</p>
-			<div class="starterSelectOption">
-				<form:label path="playerName">Starter?</form:label>
-				<div class="radioGroup">
-				<form:radiobutton value="True" label="Yes" path="isStarter" />
-				</div>
-				<div class="radioGroup">
-				<form:radiobutton value="False" label="No" path="isStarter" />
-				</div>
+			<div class="formContainer">
 				<form:errors class="text-danger" path="isStarter" />
 				<c:out value="${error}"></c:out>
-			</div>
-			<div class="buttonGroup">
-				<a href="/teams" class="btn btn-primary">Home</a> <input
-					type="submit" value="Submit" class="btn btn-success" />
-			</div>
+				<div class="starterSelectOption">
+					<form:label path="playerName">Starter?</form:label>
+					<div class="radioGroup">
+					<form:radiobutton value="True" label="Yes" path="isStarter" />
+					</div>
+					<div class="radioGroup">
+					<form:radiobutton value="False" label="No" path="isStarter" />
+					</div>
+				</div>
+				<div class="buttonGroup">
+					<a href="/teams" class="btn">Home</a> 
+					<input type="submit" value="Submit" class="btn" />
+				</div>
+		</div>
 		</form:form>
 	</div>
 </body>

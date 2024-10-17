@@ -12,6 +12,9 @@ body {
 }
 
 .newTeamContainer {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 60px 68px 40px;
     border-radius: 4px;
     max-width: 450px;
@@ -38,8 +41,70 @@ newTeamForm h1 {
     font-size: 16px;
 }
 
+.formContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .buttonGroup {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	gap: 15px;
+}
+
+.newTeamContainer input[type="text"],
+.newTeamContainer input[type="date"],
+.newTeamContainer input[type="time"] {
+    border: 0;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #fdc8f9;
+    padding: 10px 10px;
+    width: 250px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+
+.newTeamContainer input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.newTeamContainer input[type="submit"]:hover {
+    background: #2ecc71;
+    color: black;
+}
+
+.newTeamContainer a {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.newTeamContainer a:hover {
+    background: #3498db;
+    color: black;
 }

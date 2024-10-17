@@ -29,7 +29,7 @@ public class Player {
 	@Size(min = 4, max = 60, message = "Player Name must be at least 4 characters.")
 	private String playerName;
 	
-	@NotNull(message = "Please Select One")
+	@NotNull(message = "Please Select If Starter")
 	private Boolean isStarter;
 	
 	@NotNull

@@ -21,8 +21,8 @@
 </head>
 <body>
 <div class="links">
-<a href="/teams" class="btn btn-primary">Home Page</a>
-<a href="/players/new" class="btn btn-primary"> Add Player</a>
+<a href="/teams" class="btn">Home Page</a>
+<a href="/players/new" class="btn"> Add A Player</a>
 </div>
 <div class="allPlayers">
 	<div class="goalkeepers">

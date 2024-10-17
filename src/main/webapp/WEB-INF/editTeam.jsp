@@ -21,34 +21,34 @@
 
 </head>
 <body>
-	<div class="editContainter">
+	<div class="editContainer">
 		<h1>Edit Your Team</h1>
 		<form:form action="/teams/${team.id}" method="post"
 			modelAttribute="team" class="editForm">
 			<input type="hidden" name="_method" value="put">
-			<div>
-				<form:label path="name">Name</form:label>
+			<div class="formContainer">
+				<form:label path="name">Team Name</form:label>
 				<form:errors class="text-danger" path="name" />
 				<form:input path="name" class="input-group" />
 			</div>
-			<div>
+			<div class="formContainer">
 				<form:label path="formation">Formation</form:label>
 				<form:errors class="text-danger" path="formation" />
 				<form:input path="formation" class="input-group" />
 			</div>
-			<div>
+			<div class="formContainer">
 				<form:label path="gameday">Game Day</form:label>
 				<form:errors class="text-danger" path="gameday" />
 				<form:input type="date" path="gameday" class="input-group" />
 			</div>
-			<div>
+			<div class="formContainer">
 				<form:label path="gameTime">Game Time</form:label>
 				<form:errors class="text-danger" path="gameTime" />
 				<form:input type="time" path="gameTime" class="input-group" />
 			</div>
 			<div class="buttonGroup">
 				<a href="/teams" class="btn btn-primary">Home</a> 
-				<input type="submit" value="Submit" class="btn btn-success" />
+				<input type="submit" value="Submit" class="btn" />
 			</div>
 		</form:form>
 	</div>
