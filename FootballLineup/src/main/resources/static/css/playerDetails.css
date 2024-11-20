@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.75),
+		rgba(0, 0, 0, 0.75)), url('https://media.istockphoto.com/id/172673618/photo/soccer-fields-lines.jpg?s=612x612&w=0&k=20&c=G81v86XAkPh7cN0-_pm3qClXy6XiTlzE12053sb9xzI=')
+		no-repeat center center/cover;
+	height: 100vh;
+	color: white;
+}
+
+.buttonGroup {
+	display: flex;
+	gap: 15px;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+.playerAlert{
+	display: flex;
+	flex-direction: row;
+	gap: 8px;
+}
+
+.icon {
+	width: 30px;
+	height: fit-content;
+}
+
+.buttonGroup a {
+    border: 0;
+	background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.buttonGroup .edit {
+    border: 0;
+	background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #B85E2A;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.buttonGroup a:hover {
+	background: #3498db;
+    color: black;
+}
+
+.buttonGroup .edit:hover {
+	background: #B85E2A;
+    color: black;
+}

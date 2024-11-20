@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('https://images.stockcake.com/public/5/5/7/557f3bb8-bb92-4046-93d1-2e2485dad045_large/stadium-night-lights-stockcake.jpg')no-repeat center center/cover;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+
+.table {
+	color: white;
+}
+
+tr:hover {
+	background-color: #212529;
+}
+
+a{
+	font-weight: bold;
+}
+a:hover {
+	color: gold;
+}
+
+.container {
+	padding: 40px;
+	border-radius: 4px;
+	max-width: 800px;
+	width: 100%;
+	text-align: center;
+}
+
+h1 {
+	margin-bottom: 24px;
+	font-size: 32px;
+	font-weight: 700;
+}
+
+h2 {
+	margin-bottom: 24px;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 23px
+}
+.icon {
+	border: none;
+	width: 55px;
+}
+
+.toplinks {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap:15px
+}
+
+.logout{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #F15A5C;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+.links a {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+
+.links a:hover {
+    background: #3498db;
+    color: black;
+}
+
+.logout:hover {
+	background: #F15A5C;
+	color: black;
+}
